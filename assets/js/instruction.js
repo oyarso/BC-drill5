@@ -61,12 +61,28 @@ const generador = function* () {
 let gen1 = generador();  
 let contenido = document.getElementById('contenido');
 function tcg(sw) {
-  for (let i = 0; i < sw.length; i++) {
+  for (let i = 0; i < sw.length; i+=3) {
     console.log(gen1.next().value);
     contenido.innerHTML += `
-    <h4>${sw[i].name}</h4>
-`  
-    
+    <div class="container right">
+      <div class="content">
+        <div class="row">
+          <div class="col">
+            <h2>${sw[i].name}</h2>
+            <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
+          </div>
+          <div class="col">
+            <h2>${sw[i+1].name}</h2>
+            <p>Estatura: ${sw[i+1].height} cm. Peso: ${sw[i+1].mass} kg.</p>
+          </div>
+          <div class="col">
+            <h2>${sw[i+2].name}</h2>
+            <p>Estatura: ${sw[i+2].height} cm. Peso: ${sw[i+2].mass} kg.</p>
+        </div>
+      </div>
+    </div>
+
+`      
   }
  
   }
