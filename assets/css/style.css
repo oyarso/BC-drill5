@@ -1,7 +1,9 @@
 * {
     box-sizing: border-box;
   }
-  
+.tamanio{
+font-size: 3rem;
+   }
   body {
     background-color: #7f7f7f;
     font-family: Helvetica, sans-serif;
@@ -17,7 +19,7 @@
     content: '';
     position: absolute;
     width: 6px;
-    background-color: white;
+    background-color: grey;
     top: 0;
     bottom: 0;
   
@@ -76,17 +78,20 @@
   }
   
   .right::after {
-    left: -16px;
+    left: -43px;
   }
   
   .content {
-    padding: 20px 30px;
+    padding: 0px;
     background-color: white;
     position: relative;
     border-radius: 6px;
   }
   
-  @media screen and (max-width: 600px) {
+  .pdleft{
+    padding-right: 10rem;
+  }
+  /* @media screen and (max-width: 600px) {
     .timeline::after {
     left: 31px;
     }
@@ -96,19 +101,19 @@
     padding-left: 70px;
     padding-right: 25px;
     }
-    
-    .container::before {
+     */
+    /* .container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
     }
-  
-    .left::after, .right::after {
+   */
+    /* .left::after, .right::after {
     left: 15px;
     }
     
     .right {
     left: 0%;
     }
-  }
+   */
