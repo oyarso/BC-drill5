@@ -129,10 +129,10 @@ function tcg(sw) {
 
 let url2 = `https://swapi.dev/api/people/?search=a&page=2`
 fetch(url2)
-  .then(res => {
-    if (res.ok) {
+  .then(res2 => {
+    if (res2.ok) {
       console.log('Éxito');
-      return res.json()
+      return res2.json()
     } else {
       console.log('Fallo');
     }
@@ -170,7 +170,7 @@ const generador2 = function* () {
 let gen2 = generador2();
 let contenido3 = document.getElementById('contenido3');
 function tcg2(sw2) {
-  for (let i = 0; i < sw2.length; i += 6) {
+  for (let i = 0; i < sw2.length; i += 15) {
     contenido3.innerHTML += `
     <div class="row">
       <div class="col shadow-sm p-3 mb-5 bg-white rounded">
@@ -202,3 +202,15 @@ function tcg2(sw2) {
       </div>
     </div>
 `}}
+
+function myFunction() {
+  document.getElementById("panel").style.display = "block";
+}
+
+function myFunction2() {
+  document.getElementById("panel2").style.display = "block";
+}
+
+function myFunction3() {
+  document.getElementById("panel3").style.display = "block";
+}
