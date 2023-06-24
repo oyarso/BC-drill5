@@ -12,21 +12,6 @@ fetch(url)
     tcg(data.results)
   );
 
-let stars = [
-  `https://swapi.dev/api/people/1`,
-  `https://swapi.dev/api/people/2`,
-  `https://swapi.dev/api/people/3`,
-  `https://swapi.dev/api/people/4`,
-  `https://swapi.dev/api/people/5`,
-  `https://swapi.dev/api/people/6`,
-  `https://swapi.dev/api/people/7`,
-  `https://swapi.dev/api/people/8`,
-  `https://swapi.dev/api/people/9`,
-  `https://swapi.dev/api/people/10`
-];
-
-
-
   function* generador() {
     var i = 0;
     while(i<10)
@@ -53,28 +38,28 @@ function tcg(sw) {
             <h5>${sw[i].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
-          ${i++} 
+          
            <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
         </div>
 
 
         <div class="row">
-        ${i++} 
+         
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
-          ${i++} 
+      
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
-          ${i++} 
+         
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
         </div>
@@ -85,32 +70,32 @@ function tcg(sw) {
             <h5>En esta sección</h5>
             <p>Encontrarás información sobre los personajes secundarios importantes</p>
           </div>
-          ${i++} 
+           
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
-          ${i++} 
+          
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
         </div>
         
         <div class="row">
-        ${i++} 
+     
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
-          ${i++} 
+       
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
-          ${i++} 
+         
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
         </div>
@@ -132,16 +117,6 @@ fetch(url2)
     tcg2(data2.results)
   );
 
-let stars2 = [
-
-  `https://swapi.dev/api/people/11?page=2`,
-  `https://swapi.dev/api/people/12?page=2`,
-  `https://swapi.dev/api/people/13?page=2`,
-  `https://swapi.dev/api/people/14?page=2`,
-  `https://swapi.dev/api/people/15?page=2`
-];
-
-
 function* generador2() {
   var i = 0;
   while(true)
@@ -160,30 +135,30 @@ function tcg2(sw2) {
         <h5>En esta sección</h5>
         <p>Encontrarás otros personajes significativos</p>
       </div>
-      ${i++} 
+      
       <div class="col shadow-sm p-3 mb-5 bg-white rounded">
         <h5>${sw2[i].name}</h5>
         <p>Estatura: ${sw2[i].height} cm. Peso: ${sw2[i].mass} kg.</p>
       </div>
-      ${i++} 
+
       <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-        <h5>${sw2[i].name}</h5>
+        <h5>${sw2[i++].name}</h5>
         <p>Estatura: ${sw2[i].height} cm. Peso: ${sw2[i].mass} kg.</p>
       </div>
       <div class="row">
-      ${i++} 
+     
         <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-          <h5>${sw2[i].name}</h5>
+          <h5>${sw2[i++].name}</h5>
           <p>Estatura: ${sw2[i].height} cm. Peso: ${sw2[i].mass} kg.</p>
         </div>
-        ${i++} 
+  
         <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-          <h5>${sw2[i].name}</h5>
+          <h5>${sw2[i++].name}</h5>
           <p>Estatura: ${sw2[i].height} cm. Peso: ${sw2[i].mass} kg.</p>
         </div>
-        ${i++} 
+
         <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-          <h5>${sw2[i].name}</h5>
+          <h5>${sw2[i++].name}</h5>
           <p>Estatura: ${sw2[i].height} cm. Peso: ${sw2[i].mass} kg.</p>
         </div>
       </div>

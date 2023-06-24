@@ -80,11 +80,14 @@ body {
 .pdleft{
   padding-right: 10rem;
 }
-/* @media screen and (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
   .timeline::after {
   left: 31px;
+  margin-left: -3px;
+}
   }
-  
+  /*  
   .container {
   width: 100%;
   padding-left: 70px;
