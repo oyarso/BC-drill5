@@ -14,7 +14,7 @@ fetch(url)
 
   function* generador() {
     var i = 0;
-    while(i<10)
+    while(true)
       yield i++;
   }
 
@@ -23,7 +23,7 @@ let contenido = document.getElementById('contenido');
 let contenido2 = document.getElementById('contenido2');
 i=gen1.next().value;
 function tcg(sw) {
-  for (let i = 0; i < sw.length; i += 10) {
+  for (let i = 0; i < sw.length; i += 9) {
     
     contenido.innerHTML += `
  
@@ -35,7 +35,7 @@ function tcg(sw) {
             <p>Encontrarás información sobre los personajes más populares de las peliculas</p>
           </div>
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i].name}</h5>
+            <h5>${sw[i++].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
           
@@ -95,7 +95,7 @@ function tcg(sw) {
           </div>
          
           <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-            <h5>${sw[i++].name}</h5>
+            <h5>${sw[i].name}</h5>
             <p>Estatura: ${sw[i].height} cm. Peso: ${sw[i].mass} kg.</p>
           </div>
         </div>
@@ -137,7 +137,7 @@ function tcg2(sw2) {
       </div>
       
       <div class="col shadow-sm p-3 mb-5 bg-white rounded">
-        <h5>${sw2[i].name}</h5>
+        <h5>${sw2[i++].name}</h5>
         <p>Estatura: ${sw2[i].height} cm. Peso: ${sw2[i].mass} kg.</p>
       </div>
 
